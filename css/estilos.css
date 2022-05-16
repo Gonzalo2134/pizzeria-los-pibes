@@ -138,6 +138,7 @@ button { color: rgb(0, 0, 0);
     margin: 50px;
     background-color: white;
     text-align: center;
+    background-image: linear-gradient(to top, blue rgb(0, 110, 255));
 }
 
 .boton__comprar2{
