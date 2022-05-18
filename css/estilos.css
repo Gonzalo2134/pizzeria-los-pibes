@@ -18,18 +18,9 @@
     gap: 2rem;
 }
 
-.div__flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 25px;
+.bg__blue{
+    background-color:rgb(138, 186, 228) ;
 }
-
-button:hover{
-    transform: scale(1.2);
-
-}
-
 
 body {
     background-color: rgb(138, 186, 228);
@@ -58,11 +49,21 @@ div {
     background-color:rgb(138, 186, 228);
 }
 
+.titulos__centrar{
+    text-align: center;
+}
+
+
+
 .ul__display{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    background-color:rgb(138, 186, 228)
+    background-color:rgb(138, 186, 228);
+    list-style-type: none;
+    text-align: center;
+    gap: 300px;
+    
 }
 
 .portada{
@@ -74,6 +75,10 @@ div {
     align-items: center;
     background-position: center;
 
+}
+
+.titulos__color{
+    color: white;
 }
 
 
@@ -432,4 +437,8 @@ button { color: rgb(0, 0, 0);
         width: 20rem;
         height: 20rem;
     }
+}
+
+.img__footer{
+    height: 60px;
 }
