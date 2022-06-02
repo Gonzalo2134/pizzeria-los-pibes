@@ -294,3 +294,18 @@ a:visited {
 
 .header li:hover {
   background-color: #8abae4; }
+
+.key1-card {
+  background-image: url(../recursos/combo1.jpg);
+  height: 15rem;
+  width: 35rem; }
+
+.key2-card {
+  background-image: url(../recursos/combo2.jpg);
+  height: 15rem;
+  width: 35rem; }
+
+.key3-card {
+  background-image: url(../recursos/combo3.jpg);
+  height: 15rem;
+  width: 35rem; }

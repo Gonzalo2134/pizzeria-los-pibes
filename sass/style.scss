@@ -432,4 +432,15 @@ a:visited{
     background-color: rgb(138, 186, 228);
 }
 
+$comidas: (
+    key1: combo1, key2: combo2 , key3: combo3);
+
+@each $key,$combo in $comidas {
+    .#{$key}-card{
+        background-image: url(../recursos/#{$combo}.jpg);
+        height: 15rem;
+        width: 35rem;
+    }
+}
+
 
