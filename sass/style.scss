@@ -5,21 +5,76 @@
     padding: 0;
 }
 
-.grid {
-    &__container{
-        display: grid;
-        border: 1px solid rgb(138, 186, 228) ;
-        grid-template-areas:"uno tres cinco"
-                            "dos cuatro seis";
-    &__container-dos{
-        display: grid;
-        border: 1px solid rgb(138, 186, 228);
-        grid-template-areas:"uno dos tres"
-                            "cuatro cinco seis";
-        gap: 2rem;
-    }
+.grid__conteiner {
+    display: grid;
+    border: 1px solid rgb(138, 186, 228) ;
+    grid-template-areas:"uno tres cinco"
+                        "dos cuatro seis";
+                        .boton__comprar{
+                            border: 1px solid black;
+                            margin: 50px;
+                            background-color: white;
+                            text-align: center;}
+                        .grid__items{
+                            border: 5px solid rgb(138, 186, 228);}
+                            .grid__uno{
+                                grid-area: uno;                                        
+                                .menu__muzza{
+                                    padding: 1rem;
+                                    height: 25rem;
+                                    width: 25rem;}
+                                }
+                                .grid__dos{
+                                    grid-area: dos;                        
+                                    .boton__comprar{
+                                        border: 1px solid black;
+                                        margin: 50px;
+                                        background-color: white;
+                                        text-align: center;}}
+                                .grid__tres{
+                                    grid-area: tres;                                        
+                                    .menu__calabresa{
+                                        padding: 1rem;
+                                        height: 25rem;
+                                        width: 31rem;}
+                                    }
+                                    .grid__cuatro{
+                                        grid-area: cuatro;                        
+                                        .boton__comprar{
+                                            border: 1px solid black;
+                                            margin: 50px;
+                                            background-color: white;
+                                            text-align: center;}}
+                                    .grid__cinco{
+                                        grid-area: cinco;                                        
+                                        .menu__especial{
+                                            padding: 1rem;
+                                            height: 25rem;
+                                            width: 31rem;}
+                                        }
+                                        .grid__seis{
+                                            grid-area: seis;                        
+                                            .boton__comprar{
+                                                border: 1px solid black;
+                                                margin: 50px;
+                                                background-color: white;
+                                                text-align: center;}}
 }
-}
+
+                                        .menu__muzza{
+                                            padding: 1rem;
+                                            height: 25rem;
+                                            width: 25rem;}
+                                        .menu__calabresa{
+                                            padding: 1rem;
+                                            height: 25rem;
+                                            width: 31rem;}
+                                        .menu__especial{
+                                            padding: 1rem;
+                                            height: 25rem;
+                                            width: 31rem;}
+
+
 
 .header{
     &{
@@ -27,29 +82,27 @@
     margin: 2px;
     border: 2px solid black;
     background-color: rgb(138, 186, 228);}
-    &__navegacion {
+    .header__navegacion {
         background-color:rgb(138, 186, 228);
     }
-    & li:hover {
-        background-color: rgb(138, 186, 228);
-    }
 }
 
-.titulos{
-    &__pad{
-        padding: 1rem;
-    }
-    &__centrar{
+    .titulos__centrar{
         text-align: center;
     }
-    &__color{
+    .titulos__color{
         color: white;
     }
-    &{
+    .titulos{
         text-align: center;
     }
-}
 
+h2{
+    .titulos__pad{
+        padding: 1rem;
+    }
+    
+}
 
 .div{
     div { 
@@ -96,49 +149,10 @@
 }
 
 
-menu{
-    &__muzza{
-        padding: 1rem;
-        height: 25rem;
-        width: 25rem;
-        
-    }
-    &__calabresa{
-        padding: 1rem;
-        height: 25rem;
-        width: 31rem;
-    }
-    &__especial{
-        padding: 1rem;
-        height: 25rem;
-        width: 31rem;
-    }
-    &__muzza2{
-        padding: 1rem;
-        height: 500px;
-        width: 500px;
-        
-    }
-    &__calabresa2{
-        padding: 1rem;
-        height: 500px;
-        width: 500px;
-    }
-    &__especial2{
-        padding: 30px;
-        height: 500px;
-        width: 500px;
-    }
-}
+
 
 
 .boton{
-    &__comprar{
-        border: 1px solid black;
-        margin: 50px;
-        background-color: white;
-        text-align: center;
-    }
     &__comprar2{
         border: 1px solid black;
         margin: 0px;
@@ -154,48 +168,82 @@ menu{
     }
 }
 
-.empanadas{
-    &__jyq{
-        width: 30rem;
-        height: 30rem;
-        padding: 2rem;
-    }
-    &__c{
-        width: 30rem;
-        height: 30rem;
-        padding: 2rem;
-    }
-    &__p{
-        width: 30rem;
-        height: 30rem;
-        padding: 2rem;
-    }
-    
+
+.grid__items{
+        border: 5px solid rgb(138, 186, 228);
+
+
 }
 
-.grid{
-    &__items{
-        border: 5px solid rgb(138, 186, 228);
-    }
-    &__uno{
+.grid__container-dos{
+    display: grid;
+    border: 1px solid rgb(138, 186, 228);
+    grid-template-areas:"uno dos tres"
+                        "cuatro cinco seis";
+    gap: 2rem;
+    .grid__uno1{
         grid-area: uno;
+        .menu__muzza{
+            padding: 1rem;
+            height: 25rem;
+            width: 25rem;
+        }
     }
-    &__dos{
+    
+    .grid__dos2{
         grid-area: dos;
+        .menu__especial{
+            padding: 1rem;
+            height: 25rem;
+            width: 31rem;
+        }
     }
-    &__tres{
-        grid-area: tres;
+    
+    
+    .grid__tres3{
+        grid-area: tres; 
+            .menu__calabresa{
+                padding: 1rem;
+                height: 25rem;
+                width: 31rem;
+        }
     }
-    &__cuatro{
+    
+    
+    .grid__cuatro4{
         grid-area: cuatro;
+        .empanadas__jyq{
+            width: 30rem;
+            height: 30rem;
+            padding: 2rem;
+        }
     }
-    &__cinco{
+    
+    .grid__cinco5{
         grid-area: cinco;
+        .empanadas__c  {
+            width: 30rem;
+            height: 30rem;
+            padding: 2rem;
+        }
     }
-    &__seis{
+    
+    .grid__seis6{
         grid-area: seis;
+        .empanadas__p { 
+            width: 30rem;
+            height: 30rem;
+            padding: 2rem;
+        }
+    }
+    h2{
+        .titulos__grid{
+            margin: 20rem;
+        }
     }
 }
+
+
 
 .recurso{
     width: 20vw;
@@ -212,16 +260,13 @@ body {
 
 .p__line{
     display: flex;
-
+.textos__pad{
+    padding: 1rem;
+}
 }
 
 button { color: rgb(0, 0, 0);
     background-color: rgb(228, 231, 185);
-}
-
-
-.textos__pad{
-    padding: 1rem;
 }
 
 
@@ -423,7 +468,7 @@ a:visited{
 }
 
 .header li:hover {
-    background-color: rgb(138, 186, 228);
+    background-color: rgb(120, 190, 240);
 }
 
 $comidas: (
@@ -435,5 +480,9 @@ $comidas: (
         height: 15rem;
         width: 35rem;
     }
+}
+
+.header li:hover {
+    background-color: rgb(120, 190, 240);
 }
 

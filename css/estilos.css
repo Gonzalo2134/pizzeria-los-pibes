@@ -2,15 +2,71 @@
   margin: 0;
   padding: 0; }
 
-.grid__container {
+.grid__conteiner {
   display: grid;
   border: 1px solid #8abae4;
   grid-template-areas: "uno tres cinco" "dos cuatro seis"; }
-  .grid__container__container-dos {
-    display: grid;
-    border: 1px solid #8abae4;
-    grid-template-areas: "uno dos tres" "cuatro cinco seis";
-    gap: 2rem; }
+  .grid__conteiner .boton__comprar {
+    border: 1px solid black;
+    margin: 50px;
+    background-color: white;
+    text-align: center; }
+  .grid__conteiner .grid__items {
+    border: 5px solid #8abae4; }
+  .grid__conteiner .grid__uno {
+    grid-area: uno; }
+    .grid__conteiner .grid__uno .menu__muzza {
+      padding: 1rem;
+      height: 25rem;
+      width: 25rem; }
+  .grid__conteiner .grid__dos {
+    grid-area: dos; }
+    .grid__conteiner .grid__dos .boton__comprar {
+      border: 1px solid black;
+      margin: 50px;
+      background-color: white;
+      text-align: center; }
+  .grid__conteiner .grid__tres {
+    grid-area: tres; }
+    .grid__conteiner .grid__tres .menu__calabresa {
+      padding: 1rem;
+      height: 25rem;
+      width: 31rem; }
+  .grid__conteiner .grid__cuatro {
+    grid-area: cuatro; }
+    .grid__conteiner .grid__cuatro .boton__comprar {
+      border: 1px solid black;
+      margin: 50px;
+      background-color: white;
+      text-align: center; }
+  .grid__conteiner .grid__cinco {
+    grid-area: cinco; }
+    .grid__conteiner .grid__cinco .menu__especial {
+      padding: 1rem;
+      height: 25rem;
+      width: 31rem; }
+  .grid__conteiner .grid__seis {
+    grid-area: seis; }
+    .grid__conteiner .grid__seis .boton__comprar {
+      border: 1px solid black;
+      margin: 50px;
+      background-color: white;
+      text-align: center; }
+
+.menu__muzza {
+  padding: 1rem;
+  height: 25rem;
+  width: 25rem; }
+
+.menu__calabresa {
+  padding: 1rem;
+  height: 25rem;
+  width: 31rem; }
+
+.menu__especial {
+  padding: 1rem;
+  height: 25rem;
+  width: 31rem; }
 
 .header {
   padding: 1rem;
@@ -18,14 +74,8 @@
   border: 2px solid black;
   background-color: #8abae4; }
 
-.header__navegacion {
+.header .header__navegacion {
   background-color: #8abae4; }
-
-.header li:hover {
-  background-color: #8abae4; }
-
-.titulos__pad {
-  padding: 1rem; }
 
 .titulos__centrar {
   text-align: center; }
@@ -35,6 +85,9 @@
 
 .titulos {
   text-align: center; }
+
+h2 .titulos__pad {
+  padding: 1rem; }
 
 .div div {
   background-color: #8abae4; }
@@ -69,42 +122,6 @@
 .li__display {
   display: inline; }
 
-menu__muzza {
-  padding: 1rem;
-  height: 25rem;
-  width: 25rem; }
-
-menu__calabresa {
-  padding: 1rem;
-  height: 25rem;
-  width: 31rem; }
-
-menu__especial {
-  padding: 1rem;
-  height: 25rem;
-  width: 31rem; }
-
-menu__muzza2 {
-  padding: 1rem;
-  height: 500px;
-  width: 500px; }
-
-menu__calabresa2 {
-  padding: 1rem;
-  height: 500px;
-  width: 500px; }
-
-menu__especial2 {
-  padding: 30px;
-  height: 500px;
-  width: 500px; }
-
-.boton__comprar {
-  border: 1px solid black;
-  margin: 50px;
-  background-color: white;
-  text-align: center; }
-
 .boton__comprar2 {
   border: 1px solid black;
   margin: 0px;
@@ -115,41 +132,52 @@ menu__especial2 {
   width: 25rem;
   height: 18rem; }
 
-.empanadas__jyq {
-  width: 30rem;
-  height: 30rem;
-  padding: 2rem; }
-
-.empanadas__c {
-  width: 30rem;
-  height: 30rem;
-  padding: 2rem; }
-
-.empanadas__p {
-  width: 30rem;
-  height: 30rem;
-  padding: 2rem; }
-
 .grid__items {
   border: 5px solid #8abae4; }
 
-.grid__uno {
-  grid-area: uno; }
-
-.grid__dos {
-  grid-area: dos; }
-
-.grid__tres {
-  grid-area: tres; }
-
-.grid__cuatro {
-  grid-area: cuatro; }
-
-.grid__cinco {
-  grid-area: cinco; }
-
-.grid__seis {
-  grid-area: seis; }
+.grid__container-dos {
+  display: grid;
+  border: 1px solid #8abae4;
+  grid-template-areas: "uno dos tres" "cuatro cinco seis";
+  gap: 2rem; }
+  .grid__container-dos .grid__uno1 {
+    grid-area: uno; }
+    .grid__container-dos .grid__uno1 .menu__muzza {
+      padding: 1rem;
+      height: 25rem;
+      width: 25rem; }
+  .grid__container-dos .grid__dos2 {
+    grid-area: dos; }
+    .grid__container-dos .grid__dos2 .menu__especial {
+      padding: 1rem;
+      height: 25rem;
+      width: 31rem; }
+  .grid__container-dos .grid__tres3 {
+    grid-area: tres; }
+    .grid__container-dos .grid__tres3 .menu__calabresa {
+      padding: 1rem;
+      height: 25rem;
+      width: 31rem; }
+  .grid__container-dos .grid__cuatro4 {
+    grid-area: cuatro; }
+    .grid__container-dos .grid__cuatro4 .empanadas__jyq {
+      width: 30rem;
+      height: 30rem;
+      padding: 2rem; }
+  .grid__container-dos .grid__cinco5 {
+    grid-area: cinco; }
+    .grid__container-dos .grid__cinco5 .empanadas__c {
+      width: 30rem;
+      height: 30rem;
+      padding: 2rem; }
+  .grid__container-dos .grid__seis6 {
+    grid-area: seis; }
+    .grid__container-dos .grid__seis6 .empanadas__p {
+      width: 30rem;
+      height: 30rem;
+      padding: 2rem; }
+  .grid__container-dos h2 .titulos__grid {
+    margin: 20rem; }
 
 .recurso {
   width: 20vw; }
@@ -162,13 +190,12 @@ body {
 
 .p__line {
   display: flex; }
+  .p__line .textos__pad {
+    padding: 1rem; }
 
 button {
   color: black;
   background-color: #e4e7b9; }
-
-.textos__pad {
-  padding: 1rem; }
 
 a {
   text-decoration: none;
@@ -275,7 +302,7 @@ a:visited {
   color: blueviolet; }
 
 .header li:hover {
-  background-color: #8abae4; }
+  background-color: #78bef0; }
 
 .key1-card {
   background-image: url(../recursos/combo1.jpg);
@@ -291,3 +318,6 @@ a:visited {
   background-image: url(../recursos/combo3.jpg);
   height: 15rem;
   width: 35rem; }
+
+.header li:hover {
+  background-color: #78bef0; }
