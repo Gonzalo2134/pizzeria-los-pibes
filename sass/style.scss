@@ -1,59 +1,65 @@
+@import "variables";
+
 *   {
     margin: 0;
     padding: 0;
 }
 
-.grid__container{
-    display: grid;
-    border: 1px solid rgb(138, 186, 228) ;
-    grid-template-areas:"uno tres cinco"
-                        "dos cuatro seis";
+.grid {
+    &__container{
+        display: grid;
+        border: 1px solid rgb(138, 186, 228) ;
+        grid-template-areas:"uno tres cinco"
+                            "dos cuatro seis";
+    &__container-dos{
+        display: grid;
+        border: 1px solid rgb(138, 186, 228);
+        grid-template-areas:"uno dos tres"
+                            "cuatro cinco seis";
+        gap: 2rem;
+    }
+}
 }
 
-.grid__container-dos{
-    display: grid;
-    border: 1px solid rgb(138, 186, 228);
-    grid-template-areas:"uno dos tres"
-                        "cuatro cinco seis";
-    gap: 2rem;
-}
-
-.bg__blue{
-    background-color:rgb(138, 186, 228)  ;
-}
-
-body {
-    background-color: rgb(138, 186, 228);
-}
-
-header{
+.header{
+    &{
     padding: 1rem;
     margin: 2px;
     border: 2px solid black;
-    background-color: rgb(138, 186, 228);
+    background-color: rgb(138, 186, 228);}
+    &__navegacion {
+        background-color:rgb(138, 186, 228);
+    }
+    & li:hover {
+        background-color: rgb(138, 186, 228);
+    }
 }
 
-div { 
-    background-color: rgb(138, 186, 228); 
-}
-
-.titulos__pad{
-    padding: 1rem;
-}
-
-.textos__pad{
-    padding: 1rem;
-}
-
-.header__navegacion{
-    background-color:rgb(138, 186, 228);
-}
-
-.titulos__centrar{
-    text-align: center;
+.titulos{
+    &__pad{
+        padding: 1rem;
+    }
+    &__centrar{
+        text-align: center;
+    }
+    &__color{
+        color: white;
+    }
+    &{
+        text-align: center;
+    }
 }
 
 
+.div{
+    div { 
+        background-color: rgb(138, 186, 228); 
+    }
+    .div__imagenes{
+        display: flex;
+        flex-direction: row;
+    }
+}
 
 .ul__display{
     display: flex;
@@ -77,68 +83,131 @@ div {
 
 }
 
-.titulos__color{
-    color: white;
-}
 
-
-.li__display{
+.li{
+    li{
+        padding: 1rem;
+        background-color: rgb(138, 186, 228);
+        list-style: none;
+    }
+    &__display{
     display: inline;
 }
+}
 
-li{
-    padding: 1rem;
+
+menu{
+    &__muzza{
+        padding: 1rem;
+        height: 25rem;
+        width: 25rem;
+        
+    }
+    &__calabresa{
+        padding: 1rem;
+        height: 25rem;
+        width: 31rem;
+    }
+    &__especial{
+        padding: 1rem;
+        height: 25rem;
+        width: 31rem;
+    }
+    &__muzza2{
+        padding: 1rem;
+        height: 500px;
+        width: 500px;
+        
+    }
+    &__calabresa2{
+        padding: 1rem;
+        height: 500px;
+        width: 500px;
+    }
+    &__especial2{
+        padding: 30px;
+        height: 500px;
+        width: 500px;
+    }
+}
+
+
+.boton{
+    &__comprar{
+        border: 1px solid black;
+        margin: 50px;
+        background-color: white;
+        text-align: center;
+    }
+    &__comprar2{
+        border: 1px solid black;
+        margin: 0px;
+        background-color: white;
+        text-align: center;
+    }
+}
+
+.combo{
+    &__muzzas1{
+        width: 25rem;
+        height: 18rem;
+    }
+}
+
+.empanadas{
+    &__jyq{
+        width: 30rem;
+        height: 30rem;
+        padding: 2rem;
+    }
+    &__c{
+        width: 30rem;
+        height: 30rem;
+        padding: 2rem;
+    }
+    &__p{
+        width: 30rem;
+        height: 30rem;
+        padding: 2rem;
+    }
+    
+}
+
+.grid{
+    &__items{
+        border: 5px solid rgb(138, 186, 228);
+    }
+    &__uno{
+        grid-area: uno;
+    }
+    &__dos{
+        grid-area: dos;
+    }
+    &__tres{
+        grid-area: tres;
+    }
+    &__cuatro{
+        grid-area: cuatro;
+    }
+    &__cinco{
+        grid-area: cinco;
+    }
+    &__seis{
+        grid-area: seis;
+    }
+}
+
+.recurso{
+    width: 20vw;
+}
+
+
+.bg__blue{
+    background-color:rgb(138, 186, 228)  ;
+}
+
+body {
     background-color: rgb(138, 186, 228);
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-
-.div__imagenes{
-    display: flex;
-    flex-direction: row;
-}
-
-.menu__muzza{
-    padding: 1rem;
-    height: 25rem;
-    width: 25rem;
-    
-}
-
-.menu__calabresa{
-    padding: 1rem;
-    height: 25rem;
-    width: 31rem;
-}
-
-.menu__especial{
-    padding: 1rem;
-    height: 25rem;
-    width: 31rem;
-}
-
-.menu__muzza2{
-    padding: 1rem;
-    height: 500px;
-    width: 500px;
-    
-}
-
-.menu__calabresa2{
-    padding: 1rem;
-    height: 500px;
-    width: 500px;
-}
-
-.menu__especial2{
-    padding: 30px;
-    height: 500px;
-    width: 500px;
 }
 
 .p__line{
@@ -150,88 +219,15 @@ button { color: rgb(0, 0, 0);
     background-color: rgb(228, 231, 185);
 }
 
-.boton__comprar{
-    border: 1px solid black;
-    margin: 50px;
-    background-color: white;
-    text-align: center;
-}
 
-.boton__comprar2{
-    border: 1px solid black;
-    margin: 0px;
-    background-color: white;
-    text-align: center;
+.textos__pad{
+    padding: 1rem;
 }
 
 
-.combo__muzzas1{
-    width: 25rem;
-    height: 18rem;
-}
-
-.combo__muzzas2{
-    width: 25rem;
-    height: 18rem;
-}
-
-.combo__muzzas3{
-    width: 25rem;
-    height: 18rem;
-}
-
-.empanadasjyq{
-    width: 30rem;
-    height: 30rem;
-    padding: 2rem;
-}
-
-.empanadasc{
-    width: 30rem;
-    height: 30rem;
-    padding: 2rem;
-}
-
-.empanadasp{
-    width: 30rem;
-    height: 30rem;
-    padding: 2rem;
-}
-
-.grid__items{
-    border: 5px solid rgb(138, 186, 228);
-}
-
-.grid__uno{
-    grid-area: uno;
-}
-
-.grid__dos{
-    grid-area: dos;
-}
-
-.grid__tres{
-    grid-area: tres;
-}
-
-.grid__cuatro{
-    grid-area: cuatro;
-}
-
-.grid__cinco{
-    grid-area: cinco;
-}
-
-.grid__seis{
-    grid-area: seis;
-}
-
-.titulos__grid{
-    text-align: center;
-}
-
-.recurso{
-    width: 20vw;
+a {
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -260,22 +256,25 @@ button { color: rgb(0, 0, 0);
         flex-direction: column;
     }
 
-    .menu__muzza{
-        padding: 1rem;
-        height: 17rem;
-        width: 17rem;
-    }
 
-    .menu__calabresa{
-        padding: 1rem;
-        height: 17rem;
-        width: 17rem;
-    }
-
-    .menu__especial{
-        padding: 1rem;
-        height: 17rem;
-        width: 17rem;
+    .menu{
+        &__muzza{
+            padding: 1rem;
+            height: 17rem;
+            width: 17rem;
+        }
+    
+        &__calabresa{
+            padding: 1rem;
+            height: 17rem;
+            width: 17rem;
+        }
+    
+        &__especial{
+            padding: 1rem;
+            height: 17rem;
+            width: 17rem;
+        }
     }
 
     .grid__container-dos{
@@ -287,38 +286,35 @@ button { color: rgb(0, 0, 0);
                             "seis";
     }
 
-    .empanadasjyq{
+.empanadas{
+    
+    &__jyq{
         width: 17rem;
         height: 17rem;
         padding: 1rem;
     }
     
-    .empanadasc{
+    &__c{
         width: 17rem;
         height: 17rem;
         padding: 1rem;
     }
     
-    .empanadasp{
+    &__p{
         width: 17rem;
         height: 17rem;
         padding: 1rem;
     }
 
-    .combo__muzzas1{
+}
+
+.combo{
+    &__muzzas1{
         width: 20rem;
         height: 13rem;      
     }
-    
-    .combo__muzzas2{
-        width: 20rem;
-        height: 13rem;
-    }
-    
-    .combo__muzzas3{
-        width: 20rem;
-        height: 13rem;
-    }
+}
+
     
     .iframe__src{
         width: 20rem;
@@ -327,7 +323,8 @@ button { color: rgb(0, 0, 0);
 }
 @media (min-width: 541px) and (max-width: 720px) {
 
-    .grid__container{
+.grid{
+    &__container{
         grid-template-areas:"uno"
                             "dos"
                             "tres"
@@ -335,25 +332,8 @@ button { color: rgb(0, 0, 0);
                             "cinco"
                             "seis";
     }
-    .menu__muzza{
-        padding: 1rem;
-        height: 20rem;
-        width: 20rem;
-    }
-
-    .menu__calabresa{
-        padding: 1rem;
-        height: 20rem;
-        width: 20rem;
-    }
-
-    .menu__especial{
-    padding: 1rem;
-    height: 20rem;
-    width: 20rem;
-    }
-
-    .grid__container-dos{
+    
+    &__container-dos{
         grid-template-areas: "uno"
                             "dos"
                             "tres"
@@ -361,58 +341,72 @@ button { color: rgb(0, 0, 0);
                             "cinco"
                             "seis";
     }
+}
 
+    .menu{
+        &__muzza{
+            padding: 1rem;
+            height: 20rem;
+            width: 20rem;
+        }
     
-    .menu__muzza2{
+        &__calabresa{
+            padding: 1rem;
+            height: 20rem;
+            width: 20rem;
+        }
+    
+        &__especial{
         padding: 1rem;
-        height: 17rem;
-        width: 17em;
+        height: 20rem;
+        width: 20rem;
+        }
+        &__muzza2{
+            padding: 1rem;
+            height: 17rem;
+            width: 17em;
+        }
+    
+        &__calabresa2{
+            padding: 1rem;
+            height: 17rem;
+            width: 17rem;
+        }
+    
+        &__especial2{
+            padding: 1rem;
+            height: 17rem;
+            width: 17rem;
+        }
     }
 
-    .menu__calabresa2{
-        padding: 1rem;
-        height: 17rem;
-        width: 17rem;
-    }
-
-    .menu__especial2{
-        padding: 1rem;
-        height: 17rem;
-        width: 17rem;
-    }
-
-    .empanadasjyq{
+.empanadas{
+    &__jyq{
         width: 17rem;
         height: 17rem;
         padding: 1rem;
     }
     
-    .empanadasc{
+    &__c{
         width: 17rem;
         height: 17rem;
         padding: 1rem;
     }
     
-    .empanadasp{
+    &__p{
         width: 17rem;
         height: 17rem;
         padding: 1rem;
     }
+}
 
-    .combo__muzzas1{
+.combo{
+    &__muzzas1{
         width: 20rem;
         height: 13rem;
     }
-    
-    .combo__muzzas2{
-        width: 20rem;
-        height: 13rem;
-    }
-    
-    .combo__muzzas3{
-        width: 20rem;
-        height: 13rem;
-    }
+}
+
     
     .iframe__src{
         width: 20rem;
@@ -442,5 +436,4 @@ $comidas: (
         width: 35rem;
     }
 }
-
 
