@@ -1,323 +1,271 @@
 * {
   margin: 0;
   padding: 0; }
-
-.grid__conteiner {
-  display: grid;
-  border: 1px solid #8abae4;
-  grid-template-areas: "uno tres cinco" "dos cuatro seis"; }
-  .grid__conteiner .boton__comprar {
-    border: 1px solid black;
-    margin: 50px;
-    background-color: white;
-    text-align: center; }
-  .grid__conteiner .grid__items {
-    border: 5px solid #8abae4; }
-  .grid__conteiner .grid__uno {
-    grid-area: uno; }
-    .grid__conteiner .grid__uno .menu__muzza {
+  * .grid__container-dos {
+    display: grid;
+    border: 1px solid #8abae4;
+    grid-template-areas: "uno dos tres" "cuatro cinco seis";
+    gap: 2rem; }
+    * .grid__container-dos .grid__uno {
+      grid-area: uno; }
+    * .grid__container-dos .grid__dos {
+      grid-area: dos; }
+    * .grid__container-dos .grid__tres {
+      grid-area: tres; }
+    * .grid__container-dos .grid__cuatro {
+      grid-area: cuatro; }
+    * .grid__container-dos .grid__cinco {
+      grid-area: cinco; }
+    * .grid__container-dos .grid__seis {
+      grid-area: seis; }
+    * .grid__container-dos .titulos__grid {
+      text-align: center; }
+    * .grid__container-dos .menu__muzza {
       padding: 1rem;
       height: 25rem;
       width: 25rem; }
-  .grid__conteiner .grid__dos {
-    grid-area: dos; }
-    .grid__conteiner .grid__dos .boton__comprar {
-      border: 1px solid black;
-      margin: 50px;
-      background-color: white;
-      text-align: center; }
-  .grid__conteiner .grid__tres {
-    grid-area: tres; }
-    .grid__conteiner .grid__tres .menu__calabresa {
-      padding: 1rem;
-      height: 25rem;
-      width: 31rem; }
-  .grid__conteiner .grid__cuatro {
-    grid-area: cuatro; }
-    .grid__conteiner .grid__cuatro .boton__comprar {
-      border: 1px solid black;
-      margin: 50px;
-      background-color: white;
-      text-align: center; }
-  .grid__conteiner .grid__cinco {
-    grid-area: cinco; }
-    .grid__conteiner .grid__cinco .menu__especial {
-      padding: 1rem;
-      height: 25rem;
-      width: 31rem; }
-  .grid__conteiner .grid__seis {
-    grid-area: seis; }
-    .grid__conteiner .grid__seis .boton__comprar {
-      border: 1px solid black;
-      margin: 50px;
-      background-color: white;
-      text-align: center; }
-
-.menu__muzza {
-  padding: 1rem;
-  height: 25rem;
-  width: 25rem; }
-
-.menu__calabresa {
-  padding: 1rem;
-  height: 25rem;
-  width: 31rem; }
-
-.menu__especial {
-  padding: 1rem;
-  height: 25rem;
-  width: 31rem; }
-
-.header {
-  padding: 1rem;
-  margin: 2px;
-  border: 2px solid black;
-  background-color: #8abae4; }
-
-.header .header__navegacion {
-  background-color: #8abae4; }
-
-.titulos__centrar {
-  text-align: center; }
-
-.titulos__color {
-  color: white; }
-
-.titulos {
-  text-align: center; }
-
-h2 .titulos__pad {
-  padding: 1rem; }
-
-.div div {
-  background-color: #8abae4; }
-
-.div .div__imagenes {
-  display: flex;
-  flex-direction: row; }
-
-.ul__display {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  background-color: #8abae4;
-  list-style-type: none;
-  text-align: center;
-  gap: 300px; }
-
-.portada {
-  display: flex;
-  flex-direction: column;
-  background-image: url(../recursos/horno.jpg);
-  height: 23rem;
-  justify-content: center;
-  align-items: center;
-  background-position: center; }
-
-.li li {
-  padding: 1rem;
-  background-color: #8abae4;
-  list-style: none; }
-
-.li__display {
-  display: inline; }
-
-.boton__comprar2 {
-  border: 1px solid black;
-  margin: 0px;
-  background-color: white;
-  text-align: center; }
-
-.combo__muzzas1 {
-  width: 25rem;
-  height: 18rem; }
-
-.grid__items {
-  border: 5px solid #8abae4; }
-
-.grid__container-dos {
-  display: grid;
-  border: 1px solid #8abae4;
-  grid-template-areas: "uno dos tres" "cuatro cinco seis";
-  gap: 2rem; }
-  .grid__container-dos .grid__uno1 {
-    grid-area: uno; }
-    .grid__container-dos .grid__uno1 .menu__muzza {
+    * .grid__container-dos .menu__calabresa {
       padding: 1rem;
       height: 25rem;
       width: 25rem; }
-  .grid__container-dos .grid__dos2 {
-    grid-area: dos; }
-    .grid__container-dos .grid__dos2 .menu__especial {
+    * .grid__container-dos .menu__especial {
       padding: 1rem;
       height: 25rem;
-      width: 31rem; }
-  .grid__container-dos .grid__tres3 {
-    grid-area: tres; }
-    .grid__container-dos .grid__tres3 .menu__calabresa {
-      padding: 1rem;
+      width: 25rem; }
+    * .grid__container-dos .empanadas__jyq {
+      width: 25rem;
       height: 25rem;
-      width: 31rem; }
-  .grid__container-dos .grid__cuatro4 {
-    grid-area: cuatro; }
-    .grid__container-dos .grid__cuatro4 .empanadas__jyq {
-      width: 30rem;
-      height: 30rem;
-      padding: 2rem; }
-  .grid__container-dos .grid__cinco5 {
-    grid-area: cinco; }
-    .grid__container-dos .grid__cinco5 .empanadas__c {
-      width: 30rem;
-      height: 30rem;
-      padding: 2rem; }
-  .grid__container-dos .grid__seis6 {
-    grid-area: seis; }
-    .grid__container-dos .grid__seis6 .empanadas__p {
-      width: 30rem;
-      height: 30rem;
-      padding: 2rem; }
-  .grid__container-dos h2 .titulos__grid {
-    margin: 20rem; }
-
-.recurso {
-  width: 20vw; }
-
-.bg__blue {
-  background-color: #8abae4; }
-
-body {
-  background-color: #8abae4; }
-
-.p__line {
-  display: flex; }
-  .p__line .textos__pad {
+      padding: 10px; }
+    * .grid__container-dos .empanadas__c {
+      width: 25rem;
+      height: 25rem;
+      padding: 10px; }
+    * .grid__container-dos .empanadas__p {
+      width: 25rem;
+      height: 25rem;
+      padding: 10px; }
+    * .grid__container-dos .boton__comprar {
+      border: 1px solid black;
+      margin: 50px;
+      background-color: white;
+      text-align: center; }
+    * .grid__container-dos div {
+      background-color: #8abae4; }
+  * .grid__container-tres {
+    margin-top: 100px;
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-rows: 25rem 4rem;
+    grid-template-columns: 5% 30% 20% 10%;
+    gap: 2rem; }
+    * .grid__container-tres .grid__uno-dos {
+      grid-column-start: 2;
+      grid-column-end: 4; }
+    * .grid__container-tres .grid__dos-dos {
+      grid-column-start: 2;
+      grid-column-end: 3; }
+    * .grid__container-tres .img__horno {
+      height: 400px;
+      width: 600px; }
+    * .grid__container-tres div {
+      background-color: #8abae4; }
+    * .grid__container-tres .grid__tres-tres {
+      grid-row: 2;
+      grid-row-end: 4;
+      grid-column-start: 1;
+      grid-column-end: 4; }
+    * .grid__container-tres .grid__footer {
+      grid-template-rows: 1 2;
+      grid-template-columns: 1 4; }
+  * .combos__pag .titulos__pad {
     padding: 1rem; }
-
-button {
-  color: black;
-  background-color: #e4e7b9; }
-
-a {
-  text-decoration: none;
-  color: black; }
-
-@media (min-width: 320px) and (max-width: 540px) {
-  .grid__container {
-    grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco" "seis"; }
-  .portada {
+  * .combos__pag .combo__muzzas1 {
+    width: 15rempx;
+    height: 17rem; }
+  * .png__footer {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding: 5px; }
+  * body {
+    background-color: #8abae4; }
+  * footer {
+    background-color: #8abae4; }
+  * .bg__blue {
+    background-color: #8abae4; }
+  * header {
+    padding: 1rem;
+    margin: 2px;
+    border: 2px solid black;
+    background-color: #8abae4; }
+    * header .header__navegacion {
+      background-color: #8abae4; }
+  * .titulos__pad {
+    padding: 1rem; }
+  * .textos__pad {
+    padding: 1rem; }
+  * .titulos__centrar {
+    text-align: center; }
+  * .ul__display {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #8abae4;
+    list-style-type: none;
+    text-align: center;
+    gap: 300px; }
+  * .portada {
     display: flex;
     flex-direction: column;
-    background-image: url(../recursos/horno.jpg);
-    height: 20rem;
+    background-image: url(../recursos/pizza.jpg);
+    height: 50rem;
     justify-content: center;
     align-items: center;
     background-position: center; }
-  .ul__display {
-    flex-direction: column; }
-  .menu__muzza {
-    padding: 1rem;
-    height: 17rem;
-    width: 17rem; }
-  .menu__calabresa {
-    padding: 1rem;
-    height: 17rem;
-    width: 17rem; }
-  .menu__especial {
-    padding: 1rem;
-    height: 17rem;
-    width: 17rem; }
-  .grid__container-dos {
-    grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco" "seis"; }
-  .empanadas__jyq {
-    width: 17rem;
-    height: 17rem;
-    padding: 1rem; }
-  .empanadas__c {
-    width: 17rem;
-    height: 17rem;
-    padding: 1rem; }
-  .empanadas__p {
-    width: 17rem;
-    height: 17rem;
-    padding: 1rem; }
-  .combo__muzzas1 {
-    width: 20rem;
-    height: 13rem; }
-  .iframe__src {
-    width: 20rem;
-    height: 20rem; } }
-
-@media (min-width: 541px) and (max-width: 720px) {
-  .grid__container {
-    grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco" "seis"; }
-  .grid__container-dos {
-    grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco" "seis"; }
-  .menu__muzza {
-    padding: 1rem;
-    height: 20rem;
-    width: 20rem; }
-  .menu__calabresa {
-    padding: 1rem;
-    height: 20rem;
-    width: 20rem; }
-  .menu__especial {
-    padding: 1rem;
-    height: 20rem;
-    width: 20rem; }
-  .menu__muzza2 {
-    padding: 1rem;
-    height: 17rem;
-    width: 17em; }
-  .menu__calabresa2 {
-    padding: 1rem;
-    height: 17rem;
-    width: 17rem; }
-  .menu__especial2 {
-    padding: 1rem;
-    height: 17rem;
-    width: 17rem; }
-  .empanadas__jyq {
-    width: 17rem;
-    height: 17rem;
-    padding: 1rem; }
-  .empanadas__c {
-    width: 17rem;
-    height: 17rem;
-    padding: 1rem; }
-  .empanadas__p {
-    width: 17rem;
-    height: 17rem;
-    padding: 1rem; }
-  .combo__muzzas1 {
-    width: 20rem;
-    height: 13rem; }
-  .iframe__src {
-    width: 20rem;
-    height: 20rem; } }
-
-.img__footer {
-  height: 60px; }
-
-a:visited {
-  color: blueviolet; }
-
-.header li:hover {
-  background-color: #78bef0; }
-
-.key1-card {
-  background-image: url(../recursos/combo1.jpg);
-  height: 15rem;
-  width: 35rem; }
-
-.key2-card {
-  background-image: url(../recursos/combo2.jpg);
-  height: 15rem;
-  width: 35rem; }
-
-.key3-card {
-  background-image: url(../recursos/combo3.jpg);
-  height: 15rem;
-  width: 35rem; }
-
-.header li:hover {
-  background-color: #78bef0; }
+  * .titulos__color {
+    color: black; }
+  * .li__display {
+    display: inline; }
+  * .li__nav {
+    background-color: #8abae4;
+    list-style: none; }
+  * a {
+    text-decoration: none;
+    color: black; }
+  * .div__imagenes {
+    display: flex;
+    flex-direction: row; }
+  * .p__line {
+    display: flex; }
+  * button {
+    color: black;
+    background-color: #e4e7b9; }
+  * .recurso {
+    width: 20vw; }
+  @media (min-width: 320px) and (max-width: 540px) {
+    * .portada {
+      display: flex;
+      flex-direction: column;
+      background-image: url(../recursos/pizza.jpg);
+      height: 20rem;
+      justify-content: center;
+      align-items: center;
+      background-position: center; }
+    * .img__horno {
+      display: none; }
+    * .ul__display {
+      flex-direction: column; }
+    * .menu__muzza {
+      padding: 1rem;
+      height: 17rem;
+      width: 17rem; }
+    * .menu__calabresa {
+      padding: 1rem;
+      height: 17rem;
+      width: 17rem; }
+    * .menu__especial {
+      padding: 1rem;
+      height: 17rem;
+      width: 17rem; }
+    * .grid__container-dos {
+      grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco" "seis"; }
+    * .empanadasjyq {
+      width: 17rem;
+      height: 17rem;
+      padding: 1rem; }
+    * .empanadasc {
+      width: 17rem;
+      height: 17rem;
+      padding: 1rem; }
+    * .empanadasp {
+      width: 17rem;
+      height: 17rem;
+      padding: 1rem; }
+    * .combo__muzzas1 {
+      width: 20rem;
+      height: 13rem; }
+    * .iframe__src {
+      width: 20rem;
+      height: 20rem; } }
+  @media (min-width: 541px) and (max-width: 720px) {
+    * .img__horno {
+      display: none; }
+    * .grid__container-tres {
+      margin-top: 100px;
+      margin-bottom: 3rem;
+      display: grid;
+      grid-template-rows: 25rem 20rem;
+      grid-template-columns: 5% 30% 20% 10%;
+      gap: 2rem; }
+      * .grid__container-tres .grid__uno-dos {
+        grid-column-start: 2;
+        grid-column-end: 4; }
+      * .grid__container-tres .grid__dos-dos {
+        grid-column-start: 2;
+        grid-column-end: 3; }
+      * .grid__container-tres div {
+        background-color: #8abae4; }
+      * .grid__container-tres .grid__tres-tres {
+        grid-row: 2;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 4; }
+    * .menu__muzza {
+      padding: 1rem;
+      height: 20rem;
+      width: 20rem; }
+    * .menu__calabresa {
+      padding: 1rem;
+      height: 20rem;
+      width: 20rem; }
+    * .menu__especial {
+      padding: 1rem;
+      height: 20rem;
+      width: 20rem; }
+    * .grid__container-dos {
+      grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco" "seis"; }
+    * .menu__muzza2 {
+      padding: 1rem;
+      height: 17rem;
+      width: 17em; }
+    * .menu__calabresa2 {
+      padding: 1rem;
+      height: 17rem;
+      width: 17rem; }
+    * .menu__especial2 {
+      padding: 1rem;
+      height: 17rem;
+      width: 17rem; }
+    * .empanadasjyq {
+      width: 17rem;
+      height: 17rem;
+      padding: 1rem; }
+    * .empanadasc {
+      width: 17rem;
+      height: 17rem;
+      padding: 1rem; }
+    * .empanadasp {
+      width: 17rem;
+      height: 17rem;
+      padding: 1rem; }
+    * .combo__muzzas1 {
+      width: 30%;
+      height: 17rem; }
+    * .iframe__src {
+      width: 20rem;
+      height: 20rem; } }
+  * a:visited {
+    color: blueviolet; }
+  * .header li:hover {
+    background-color: #8abae4; }
+  * .key1-card {
+    background-image: url(../recursos/combo1.jpg);
+    height: 13rem;
+    width: 30rem; }
+  * .key2-card {
+    background-image: url(../recursos/combo2.jpg);
+    height: 13rem;
+    width: 30rem; }
+  * .key3-card {
+    background-image: url(../recursos/combo3.jpg);
+    height: 13rem;
+    width: 30rem; }

@@ -1,121 +1,170 @@
-@import "variables";
-
 *   {
     margin: 0;
     padding: 0;
-}
 
-.grid__conteiner {
+.grid__container-dos{
     display: grid;
-    border: 1px solid rgb(138, 186, 228) ;
-    grid-template-areas:"uno tres cinco"
-                        "dos cuatro seis";
-                        .boton__comprar{
-                            border: 1px solid black;
-                            margin: 50px;
-                            background-color: white;
-                            text-align: center;}
-                        .grid__items{
-                            border: 5px solid rgb(138, 186, 228);}
-                            .grid__uno{
-                                grid-area: uno;                                        
-                                .menu__muzza{
-                                    padding: 1rem;
-                                    height: 25rem;
-                                    width: 25rem;}
-                                }
-                                .grid__dos{
-                                    grid-area: dos;                        
-                                    .boton__comprar{
-                                        border: 1px solid black;
-                                        margin: 50px;
-                                        background-color: white;
-                                        text-align: center;}}
-                                .grid__tres{
-                                    grid-area: tres;                                        
-                                    .menu__calabresa{
-                                        padding: 1rem;
-                                        height: 25rem;
-                                        width: 31rem;}
-                                    }
-                                    .grid__cuatro{
-                                        grid-area: cuatro;                        
-                                        .boton__comprar{
-                                            border: 1px solid black;
-                                            margin: 50px;
-                                            background-color: white;
-                                            text-align: center;}}
-                                    .grid__cinco{
-                                        grid-area: cinco;                                        
-                                        .menu__especial{
-                                            padding: 1rem;
-                                            height: 25rem;
-                                            width: 31rem;}
-                                        }
-                                        .grid__seis{
-                                            grid-area: seis;                        
-                                            .boton__comprar{
-                                                border: 1px solid black;
-                                                margin: 50px;
-                                                background-color: white;
-                                                text-align: center;}}
-}
-
-                                        .menu__muzza{
-                                            padding: 1rem;
-                                            height: 25rem;
-                                            width: 25rem;}
-                                        .menu__calabresa{
-                                            padding: 1rem;
-                                            height: 25rem;
-                                            width: 31rem;}
-                                        .menu__especial{
-                                            padding: 1rem;
-                                            height: 25rem;
-                                            width: 31rem;}
-
-
-
-.header{
-    &{
-    padding: 1rem;
-    margin: 2px;
-    border: 2px solid black;
-    background-color: rgb(138, 186, 228);}
-    .header__navegacion {
-        background-color:rgb(138, 186, 228);
+    border: 1px solid rgb(138, 186, 228);
+    grid-template-areas:"uno dos tres"
+                        "cuatro cinco seis";
+    gap: 2rem;
+    .grid__uno{
+        grid-area: uno;
     }
-}
-
-    .titulos__centrar{
+    .grid__dos{
+        grid-area: dos;
+    }
+    .grid__tres{
+        grid-area: tres;
+    }
+    .grid__cuatro{
+        grid-area: cuatro;
+    }
+    .grid__cinco{
+        grid-area: cinco;   
+    }
+    .grid__seis{
+        grid-area: seis;
+    }
+    .titulos__grid{
         text-align: center;
     }
-    .titulos__color{
-        color: white;
+    .menu__muzza{
+        padding: 1rem;
+        height: 25rem;
+        width: 25rem;
     }
-    .titulos{
+    
+    .menu__calabresa{
+        padding: 1rem;
+        height: 25rem;
+        width: 25rem;
+    }
+    
+    .menu__especial{
+        padding: 1rem;
+        height: 25rem;
+        width: 25rem;
+    }
+    .empanadas__jyq{
+        width: 25rem;
+        height: 25rem;
+        padding: 10px;
+    }
+    
+    .empanadas__c{
+        width: 25rem;
+        height: 25rem;
+        padding: 10px;
+    }
+    
+    .empanadas__p{
+        width: 25rem;
+        height: 25rem;
+        padding: 10px;
+    }
+    .boton__comprar{
+        border: 1px solid black;
+        margin: 50px;
+        background-color: white;
         text-align: center;
     }
+    div { 
+        background-color: rgb(138, 186, 228); 
+    } 
+}
 
-h2{
+.grid__container-tres{
+    margin-top : 100px;
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-rows: 25rem 4rem;
+    grid-template-columns: 5% 30% 20% 10%;
+    gap: 2rem;
+        .grid__uno-dos{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        }
+        .grid__dos-dos{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        }
+        .img__horno{
+        height: 400px;
+        width: 600px;
+        }
+        div { 
+            background-color: rgb(138, 186, 228); 
+        } 
+        .grid__tres-tres{
+            grid-row: 2;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .grid__footer{
+            grid-template-rows: 1 2;
+            grid-template-columns: 1 4;
+        }
+}
+
+.combos__pag{
+
     .titulos__pad{
         padding: 1rem;
     }
     
+    .combo__muzzas1{
+        width: 15rempx;
+        height: 17rem;
+    }
 }
 
-.div{
-    div { 
-        background-color: rgb(138, 186, 228); 
+
+
+.png__footer{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding: 5px;
+}
+
+body{
+    background-color: rgb(138, 186, 228);
+}
+
+footer {
+    background-color:rgb(138, 186, 228) ;
+}
+
+.bg__blue{
+    background-color:rgb(138, 186, 228)  ;
+}
+
+
+header{
+    padding: 1rem;
+    margin: 2px;
+    border: 2px solid black;
+    background-color: rgb(138, 186, 228);
+    .header__navegacion{
+        background-color:rgb(138, 186, 228);
     }
-    .div__imagenes{
-        display: flex;
-        flex-direction: row;
-    }
+}
+
+.titulos__pad{
+    padding: 1rem;
+}
+
+.textos__pad{
+    padding: 1rem;
+}
+
+.titulos__centrar{
+    text-align: center;
 }
 
 .ul__display{
-    display: flex;
+    display: flex; 
     flex-wrap: wrap;
     flex-direction: row;
     background-color:rgb(138, 186, 228);
@@ -128,147 +177,26 @@ h2{
 .portada{
     display: flex;
     flex-direction: column;
-    background-image: url(../recursos/horno.jpg);
-    height: 23rem;
+    background-image: url(../recursos/pizza.jpg);
+    height: 50rem;
     justify-content: center;
     align-items: center;
     background-position: center;
+}
 
+.titulos__color{
+    color: black;
 }
 
 
-.li{
-    li{
-        padding: 1rem;
-        background-color: rgb(138, 186, 228);
-        list-style: none;
-    }
-    &__display{
+.li__display{
     display: inline;
 }
-}
 
-
-
-
-
-.boton{
-    &__comprar2{
-        border: 1px solid black;
-        margin: 0px;
-        background-color: white;
-        text-align: center;
-    }
-}
-
-.combo{
-    &__muzzas1{
-        width: 25rem;
-        height: 18rem;
-    }
-}
-
-
-.grid__items{
-        border: 5px solid rgb(138, 186, 228);
-
-
-}
-
-.grid__container-dos{
-    display: grid;
-    border: 1px solid rgb(138, 186, 228);
-    grid-template-areas:"uno dos tres"
-                        "cuatro cinco seis";
-    gap: 2rem;
-    .grid__uno1{
-        grid-area: uno;
-        .menu__muzza{
-            padding: 1rem;
-            height: 25rem;
-            width: 25rem;
-        }
-    }
-    
-    .grid__dos2{
-        grid-area: dos;
-        .menu__especial{
-            padding: 1rem;
-            height: 25rem;
-            width: 31rem;
-        }
-    }
-    
-    
-    .grid__tres3{
-        grid-area: tres; 
-            .menu__calabresa{
-                padding: 1rem;
-                height: 25rem;
-                width: 31rem;
-        }
-    }
-    
-    
-    .grid__cuatro4{
-        grid-area: cuatro;
-        .empanadas__jyq{
-            width: 30rem;
-            height: 30rem;
-            padding: 2rem;
-        }
-    }
-    
-    .grid__cinco5{
-        grid-area: cinco;
-        .empanadas__c  {
-            width: 30rem;
-            height: 30rem;
-            padding: 2rem;
-        }
-    }
-    
-    .grid__seis6{
-        grid-area: seis;
-        .empanadas__p { 
-            width: 30rem;
-            height: 30rem;
-            padding: 2rem;
-        }
-    }
-    h2{
-        .titulos__grid{
-            margin: 20rem;
-        }
-    }
-}
-
-
-
-.recurso{
-    width: 20vw;
-}
-
-
-.bg__blue{
-    background-color:rgb(138, 186, 228)  ;
-}
-
-body {
+.li__nav{
     background-color: rgb(138, 186, 228);
+    list-style: none;
 }
-
-.p__line{
-    display: flex;
-.textos__pad{
-    padding: 1rem;
-}
-}
-
-button { color: rgb(0, 0, 0);
-    background-color: rgb(228, 231, 185);
-}
-
 
 a {
     text-decoration: none;
@@ -276,50 +204,59 @@ a {
 }
 
 
-@media (min-width: 320px) and (max-width: 540px) {
-
-    .grid__container{
-    grid-template-areas:"uno"
-                        "dos"
-                        "tres"
-                        "cuatro"
-                        "cinco"
-                        "seis";
+.div__imagenes{
+    display: flex;
+    flex-direction: row;
 }
 
+.p__line{
+    display: flex;
+
+}
+
+button { color: rgb(0, 0, 0);
+    background-color: rgb(228, 231, 185);
+}
+
+.recurso{
+    width: 20vw;
+}
+
+@media (min-width: 320px) and (max-width: 540px) {
     .portada{
         display: flex;
         flex-direction: column;
-        background-image: url(../recursos/horno.jpg);
+        background-image: url(../recursos/pizza.jpg);
         height: 20rem;
         justify-content: center;
         align-items: center;
         background-position: center;
     }
 
+    .img__horno{
+        display: none;
+    }
+
     .ul__display{
         flex-direction: column;
     }
 
+    .menu__muzza{
+        padding: 1rem;
+        height: 17rem;
+        width: 17rem;
+    }
 
-    .menu{
-        &__muzza{
-            padding: 1rem;
-            height: 17rem;
-            width: 17rem;
-        }
-    
-        &__calabresa{
-            padding: 1rem;
-            height: 17rem;
-            width: 17rem;
-        }
-    
-        &__especial{
-            padding: 1rem;
-            height: 17rem;
-            width: 17rem;
-        }
+    .menu__calabresa{
+        padding: 1rem;
+        height: 17rem;
+        width: 17rem;
+    }
+
+    .menu__especial{
+        padding: 1rem;
+        height: 17rem;
+        width: 17rem;
     }
 
     .grid__container-dos{
@@ -331,54 +268,89 @@ a {
                             "seis";
     }
 
-.empanadas{
-    
-    &__jyq{
+    .empanadasjyq{
         width: 17rem;
         height: 17rem;
         padding: 1rem;
     }
     
-    &__c{
+    .empanadasc{
         width: 17rem;
         height: 17rem;
         padding: 1rem;
     }
     
-    &__p{
+    .empanadasp{
         width: 17rem;
         height: 17rem;
         padding: 1rem;
     }
 
-}
-
-.combo{
-    &__muzzas1{
+    .combo__muzzas1{
         width: 20rem;
         height: 13rem;      
     }
-}
-
     
+
     .iframe__src{
         width: 20rem;
         height: 20rem;
     }
-}
-@media (min-width: 541px) and (max-width: 720px) {
-
-.grid{
-    &__container{
-        grid-template-areas:"uno"
-                            "dos"
-                            "tres"
-                            "cuatro"
-                            "cinco"
-                            "seis";
-    }
     
-    &__container-dos{
+
+}
+
+
+@media (min-width: 541px) and (max-width: 720px) {
+    .img__horno{
+        display: none;
+    }
+    .grid__container-tres{
+        margin-top : 100px;
+        margin-bottom: 3rem;
+        display: grid;
+        grid-template-rows: 25rem 20rem;
+        grid-template-columns: 5% 30% 20% 10%;
+        gap: 2rem;
+            .grid__uno-dos{
+            grid-column-start: 2;
+            grid-column-end: 4;
+            }
+            .grid__dos-dos{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            }
+            div { 
+                background-color: rgb(138, 186, 228); 
+            } 
+            .grid__tres-tres{
+                grid-row: 2;
+                grid-row-end: 4;
+                grid-column-start: 1;
+                grid-column-end: 4;
+            }
+    }
+
+
+    .menu__muzza{
+        padding: 1rem;
+        height: 20rem;
+        width: 20rem;
+    }
+
+    .menu__calabresa{
+        padding: 1rem;
+        height: 20rem;
+        width: 20rem;
+    }
+
+    .menu__especial{
+    padding: 1rem;
+    height: 20rem;
+    width: 20rem;
+    }
+
+    .grid__container-dos{
         grid-template-areas: "uno"
                             "dos"
                             "tres"
@@ -386,89 +358,63 @@ a {
                             "cinco"
                             "seis";
     }
-}
 
-    .menu{
-        &__muzza{
-            padding: 1rem;
-            height: 20rem;
-            width: 20rem;
-        }
     
-        &__calabresa{
-            padding: 1rem;
-            height: 20rem;
-            width: 20rem;
-        }
-    
-        &__especial{
+    .menu__muzza2{
         padding: 1rem;
-        height: 20rem;
-        width: 20rem;
-        }
-        &__muzza2{
-            padding: 1rem;
-            height: 17rem;
-            width: 17em;
-        }
-    
-        &__calabresa2{
-            padding: 1rem;
-            height: 17rem;
-            width: 17rem;
-        }
-    
-        &__especial2{
-            padding: 1rem;
-            height: 17rem;
-            width: 17rem;
-        }
+        height: 17rem;
+        width: 17em;
     }
 
-.empanadas{
-    &__jyq{
+    .menu__calabresa2{
+        padding: 1rem;
+        height: 17rem;
+        width: 17rem;
+    }
+
+    .menu__especial2{
+        padding: 1rem;
+        height: 17rem;
+        width: 17rem;
+    }
+
+    .empanadasjyq{
         width: 17rem;
         height: 17rem;
         padding: 1rem;
     }
     
-    &__c{
+    .empanadasc{
         width: 17rem;
         height: 17rem;
         padding: 1rem;
     }
     
-    &__p{
+    .empanadasp{
         width: 17rem;
         height: 17rem;
         padding: 1rem;
     }
-}
-
-.combo{
-    &__muzzas1{
-        width: 20rem;
-        height: 13rem;
-    }
-}
 
     
+    .combo__muzzas1{
+        width: 30%;
+        height: 17rem;
+    }
+
     .iframe__src{
         width: 20rem;
         height: 20rem;
     }
 }
 
-.img__footer{
-    height: 60px;
-}
 
 a:visited{
     color: blueviolet;
 }
 
 .header li:hover {
-    background-color: rgb(120, 190, 240);
+    background-color: rgb(138, 186, 228);
 }
 
 $comidas: (
@@ -477,12 +423,10 @@ $comidas: (
 @each $key,$combo in $comidas {
     .#{$key}-card{
         background-image: url(../recursos/#{$combo}.jpg);
-        height: 15rem;
-        width: 35rem;
+        height: 13rem;
+        width: 30rem;
     }
 }
 
-.header li:hover {
-    background-color: rgb(120, 190, 240);
-}
 
+}
